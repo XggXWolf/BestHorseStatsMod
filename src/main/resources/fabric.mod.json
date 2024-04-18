@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "besthorsestats",
+	"version": "${version}",
+	"name": "besthorsestats",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/besthorsestats/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.xggxwolf.besthorsestats.BestHorseStats"
+		],
+		"client": [
+			"net.xggxwolf.besthorsestats.BestHorseStatsClient"
+		],
+		"fabric-datagen": [
+			"net.xggxwolf.besthorsestats.BestHorseStatsDataGenerator"
+		]
+	},
+	"mixins": [
+		"besthorsestats.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
