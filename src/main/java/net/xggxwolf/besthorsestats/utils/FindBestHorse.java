@@ -87,10 +87,10 @@ public class FindBestHorse {
                                 2.128599134 * jumpHeight - 0.343930367
                 ); // convert to blocks
 
-                String message = String.format("Horse %d , %d , %d Movement Speed: %.2f Blocks/sec, Jump Height: %.2f, Max Health : %.2f", x, y, z, speed, jumpHeight, health);
+                String message = String.format("Found Fastest Horse %d , %d , %d Movement Speed: %.2f Blocks/sec, Jump Height: %.2f, Max Health : %.2f", x, y, z, speed, jumpHeight, health);
 
                 ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
-                executorService.schedule(() -> player.sendMessage(Text.of(message), true), 100, TimeUnit.MILLISECONDS);
+                executorService.schedule(() -> player.sendMessage(Text.literal(message), false), 100, TimeUnit.MILLISECONDS);
             }
         }
     }
