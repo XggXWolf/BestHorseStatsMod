@@ -15,11 +15,8 @@
 	"icon": "assets/besthorsestats/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
-			"net.xggxwolf.besthorsestats.BestHorseStats"
-		],
 		"client": [
-			"net.xggxwolf.besthorsestats.BestHorseStatsClient"
+			"net.xggxwolf.besthorsestats.BestHorseStats"
 		],
 		"fabric-datagen": [
 			"net.xggxwolf.besthorsestats.BestHorseStatsDataGenerator"
