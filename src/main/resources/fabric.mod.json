@@ -1,15 +1,14 @@
 {
 	"schemaVersion": 1,
 	"id": "besthorsestats",
-	"version": "${version}",
-	"name": "besthorsestats",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"version": "1.0.0",
+	"name": "Best Horse Stats",
+	"description": "Best Horse Stats mod by XggXWolf",
 	"authors": [
-		"Me!"
+		"XggXWolf"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/XggXWolf/BestHorseStatsMod"
 	},
 	"license": "MIT",
 	"icon": "assets/besthorsestats/icon.png",
@@ -17,9 +16,6 @@
 	"entrypoints": {
 		"client": [
 			"net.xggxwolf.besthorsestats.BestHorseStats"
-		],
-		"fabric-datagen": [
-			"net.xggxwolf.besthorsestats.BestHorseStatsDataGenerator"
 		]
 	},
 	"mixins": [
