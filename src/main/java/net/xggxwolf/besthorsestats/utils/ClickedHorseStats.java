@@ -79,7 +79,7 @@ public class ClickedHorseStats {
             String message = String.format("Movement Speed: %.2f Blocks/sec, Inventory Space: %d Items, Max Health : %.2f", maxSpeed, invSpace, health);
 
             ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
-            executorService.schedule(() -> playerEntity.sendMessage(Text.literal(message), true), 100, TimeUnit.MILLISECONDS);
+            executorService.schedule(() -> playerEntity.sendMessage(Text.literal(message), true), 200, TimeUnit.MILLISECONDS);
         }
 
         return ActionResult.PASS;
