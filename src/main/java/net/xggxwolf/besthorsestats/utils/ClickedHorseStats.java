@@ -43,7 +43,7 @@ public class ClickedHorseStats {
             String message = String.format("Movement Speed: %.2f Blocks/sec, Jump Height: %.2f Blocks, Max Health : %.2f", maxSpeed, jumpHeight, health);
 
             ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
-            executorService.schedule(() -> playerEntity.sendMessage(Text.literal(message), true), 100, TimeUnit.MILLISECONDS);
+            executorService.schedule(() -> playerEntity.sendMessage(Text.literal(message), true), 200, TimeUnit.MILLISECONDS);
         }
         // Donkey stats
         if (world.isClient && entity instanceof DonkeyEntity clicked) {
@@ -55,7 +55,7 @@ public class ClickedHorseStats {
             String message = String.format("Movement Speed: %.2f Blocks/sec, Jump Height: %.2f Blocks, Max Health : %.2f", maxSpeed, jumpHeight, health);
 
             ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
-            executorService.schedule(() -> playerEntity.sendMessage(Text.literal(message), true), 100, TimeUnit.MILLISECONDS);
+            executorService.schedule(() -> playerEntity.sendMessage(Text.literal(message), true), 200, TimeUnit.MILLISECONDS);
         }
         // Mule stats
         if (world.isClient && entity instanceof MuleEntity clicked) {
@@ -67,7 +67,7 @@ public class ClickedHorseStats {
             String message = String.format("Movement Speed: %.2f Blocks/sec, Jump Height: %.2f Blocks, Max Health : %.2f", maxSpeed, jumpHeight, health);
 
             ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
-            executorService.schedule(() -> playerEntity.sendMessage(Text.literal(message), true), 100, TimeUnit.MILLISECONDS);
+            executorService.schedule(() -> playerEntity.sendMessage(Text.literal(message), true), 200, TimeUnit.MILLISECONDS);
         }
         // Llama stats
         if (world.isClient && entity instanceof LlamaEntity clicked) {
