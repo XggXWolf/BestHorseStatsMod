@@ -140,6 +140,9 @@ public class FindBestHorse {
 
                 ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
                 executorService.schedule(() -> player.sendMessage(Text.literal(message), false), 100, TimeUnit.MILLISECONDS);
+            }else {
+                ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
+                executorService.schedule(() -> player.sendMessage(Text.literal("No Horses Found Within Render Distance"), true), 100, TimeUnit.MILLISECONDS);
             }
         }
     }
